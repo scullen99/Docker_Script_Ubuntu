@@ -32,7 +32,4 @@ sudo systemctl enable docker
 
 # Agregar usuario al grupo docker
 
-whoami # Saber el nombre de tu usuario
-
-#Descomentar la siguiente fila cuando se sepa el nombre de usuario
-#sudo usermod -aG docker (nombre_de_salida_en_whoami)
+sudo usermod -aG docker "$(whoami)"
