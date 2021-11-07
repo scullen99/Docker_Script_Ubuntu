@@ -2,7 +2,7 @@
 # Script para instalar Docker en Ubuntu 23-11-2020
 
 # Actualiza los repos
-sudo apt-get update
+sudo apt-get update && sudo apt -y upgrade
 
 # Instalar utilidades
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
